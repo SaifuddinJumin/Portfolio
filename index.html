@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai's Personal Portfolio</title>
+   
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo(2).png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">My Information</a></li>
+                    <li><a href="#services"> My Services </a></li>
+                    <li><a href="#portfolio"> My Portfolio</a></li>
+
+                </ul>
+
+            </nav>
+            <div class="header-text">
+                <h3>Junior Web Developer (software Development) </h3> <br>
+                <p>Bring Your Life To Workable Website</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">My Information</h1>
+                    <br>
+                    <p> Hello, My name is Haji Mohd Saifuddin recently finish studies Bachelor of Degree (hons) in
+                        Information Technology with beginner role as a software Development in IGS College and Prototyping for last one years. By, joining
+                        coding.bn its help me to understand about programming language and to enhance my skills and gaining confident in software development and engineering.
+                    </p>
+
+                    <br>
+                    <hr>
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('contact')"> Contact me</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2023 - current: Coding.bn</span></li> <br>
+                            <li><span>2017 - 2022: Bachelor of Science (hons) in Information Technology.</span></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="contact">
+                        <ul>
+                            <p><i class="fas fa-envelope"></i> Email: saifuddin_969@gmail.com</p>
+                        </ul>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    
+    <!-- ---------services---------------- -->
+
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Latest Work</h1>
+            <div class="services-list">
+                
+                <div> <h2> 1 years</h2>
+                    <h3> Years of Experience </h3>
+                </div>
+                
+
+                <div> <h2>1 completed</h2>
+                    <h3> Major Project completed </h3> 
+                </div>
+
+                <div> <h2>2 completed</h2>
+                    <h3> Mini Project completed </h3> 
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services offer</h1>
+            <div class="services-list">
+                
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML design (90%)</h3>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>Cascade Styling Design</h3>
+
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-php"></i>
+                   <h3>PHP Design</h3>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-square-js"></i>
+                    <h3>JavaScript Design</h3>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h3>MySQL Design</h3>
+
+                </div>
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h3> UI/UX Design</h3>
+                </div>
+                
+               
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    </div>
+ <!-- ---------services end ---------------- -->
+
+     <!-- ---------Portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Mini Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Creating Account</h3>
+                        <p>This allows the user to register their account to access the websites.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Shopping Cart </h3>
+                        <p>This allows the user to select products and buy the products.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- ---------Copy Right---------------- -->
+        <div class="copyright">
+            <div class="social-icons">        
+                <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/saifuddin-jumin-b4465717a/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>Copyright © Haji Muhammad Saifuddin Bin Haji Jumin 969 </p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+</body>
+
+</html>
